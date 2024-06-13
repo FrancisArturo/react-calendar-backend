@@ -1,9 +1,6 @@
 # BackEnd MERN - Calendar
 
-## Dev
-
-1. Instalar las dependencias `npm install`
-2. Clonar el archivo `.e
+## Development
 
 1. Instalar dependencias `npm install`
 2. Clonar el archivo `.env.template` y renombrarlo a `.env`
