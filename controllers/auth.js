@@ -34,7 +34,6 @@ export const crearUsuario  = async (req, res = response) => {
             token
         })
     } catch (error) {
-        console.log(error);
         res.status(500).json({
             ok: false,
             message: 'Error al crear el usuario',
@@ -91,6 +90,8 @@ export const revalidarToken = async (req, res) => {
 
     res.json({
         ok: true,
+        uid,
+        name,
         token
     })
 }
