@@ -5,8 +5,6 @@ export const configConnection = {
 
     url: process.env.DB_CNN,
     options: {
-        // useNewUrlParser: true,
-        // useUnifiedTopology: true,
         dbName: process.env.DB_NAME,
     }
 }
