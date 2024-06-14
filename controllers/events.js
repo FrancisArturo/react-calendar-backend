@@ -56,7 +56,7 @@ export const eventUpdate = async (req, res) => {
         const newEvent = {
             ...req.body,
         }
-        console.log(req.body)
+        
         const updateEvent = await eventModel.updateOne({_id: id}, newEvent);
 
         res.json({
