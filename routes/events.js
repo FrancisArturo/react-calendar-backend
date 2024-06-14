@@ -30,16 +30,8 @@ router.post('/',
     eventCreate
 );
 
-router.put('/:id', 
-    [
+router.put('/:id', [], eventUpdate);
 
-    ],
-    eventUpdate
-);
-
-router.delete('/:id', 
-    [], 
-    eventDelete
-);
+router.delete('/:id', [], eventDelete);
 
 export default router;

@@ -35,7 +35,6 @@ export const eventUpdate = async (req, res) => {
 
     const {id} = req.params;
     const uid = req.uid;
-
     try {
         
         const event  = await eventModel.findById(id);
@@ -56,9 +55,8 @@ export const eventUpdate = async (req, res) => {
 
         const newEvent = {
             ...req.body,
-            // user: uid
         }
-
+        console.log(req.body)
         const updateEvent = await eventModel.updateOne({_id: id}, newEvent);
 
         res.json({
